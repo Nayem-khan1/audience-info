@@ -1,0 +1,15 @@
+.lead-collect-title{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.watermark-logo {
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 90vh; /* or any other value that suits your needs */
+    height: auto;
+}
