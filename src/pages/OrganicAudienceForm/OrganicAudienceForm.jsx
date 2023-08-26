@@ -191,7 +191,7 @@ const OrganicAudienceForm = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-12">
+                        <div className="col-lg-12 mt-4">
                             <p className='mb-2 font-400'>মজারু সম্পর্কে আপনি কথাথেকে জেনেছেন</p>
                             <select name="know_about_mojaru" className="form-select form-control form-control-lg student-profile-info" id="select_box" >
                                 <option value="">নির্বাচন করুন</option>
