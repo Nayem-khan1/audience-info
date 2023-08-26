@@ -85,6 +85,19 @@ const OrganicAudienceForm = () => {
     }
     return (
         <section className='container'>
+            <div className="align-center">
+                <img src={logo} alt="" className='img-fluid'/>
+            </div>
+            <div className='container-iframe'>
+                <iframe 
+                    className='responsive-iframe'
+                    src="https://www.youtube.com/embed/pvdv_d-VjDs?si=V8pN1HQYJnLrgF__" 
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
 
             <div className='mt-4 mb-2 d-flex justify-content-between align-items-center'>
                 <p className='lead-collect-title mb-0'>নিচের ফর্মটি পূরণ করুন</p>
