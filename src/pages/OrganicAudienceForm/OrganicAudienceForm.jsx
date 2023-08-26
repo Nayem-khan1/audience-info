@@ -1,6 +1,7 @@
 import React from 'react';
 import watermarkLogo from '../../assets/m_watermark.png';
 import logo from '../../assets/dashboard-logo.png';
+import flat_log from '../../assets/logo_flat.png'
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import './OrganicAudienceForm.css';
@@ -85,8 +86,15 @@ const OrganicAudienceForm = () => {
     }
     return (
         <section className='container'>
-            <div className="align-center">
-                <img src={logo} alt="" className='img-fluid' />
+            <div className='container'>
+                <div className="row d-flex justify-content-evenly align-items-center py-4">
+                    <div className="col-md-6 text-center">
+                        <img src={flat_log} alt="" className='img-fluid img' />
+                    </div>
+                    <div className="col-md-6 text-center pt-2">
+                        <h2 className="text-color">রেজিস্ট্রেশন করুন</h2>
+                    </div>
+                </div>
             </div>
             <div className='container-iframe'>
                 <iframe
@@ -98,10 +106,10 @@ const OrganicAudienceForm = () => {
                     allowfullscreen>
                 </iframe>
             </div>
-
-            <div className='mt-4 mb-2 d-flex justify-content-between align-items-center'>
-                <p className='lead-collect-title mb-0'>নিচের ফর্মটি পূরণ করুন</p>
-                <img src={logo} alt="" className='img-fluid' />
+            {/* d-flex justify-content-between align-items-center */}
+            <div className='mt-4 mb-2'>
+                <p className='lead-collect-title mb-0 text-center py-3'>নিচের ফর্মটি পূরণ করুন</p>
+                {/* <img src={logo} alt="" className='img-fluid' /> */}
             </div>
 
             <div className='mb-5'>
@@ -121,12 +129,18 @@ const OrganicAudienceForm = () => {
                             <p className='mb-2 font-400'>ফোন নাম্বার<span className='text-danger'>*</span></p>
                             <div class="input-group country-code">
                                 <div class="input-group-text">
-                                <select name="" id="">
-                                    <option value="">Bangladesh</option>
-                                    <option value="">India</option>
-                                    <option value="">Nepal</option>
-                                    <option value="">England</option>
-                                </select>
+                                    <select name="" id="">
+                                        <option value="">+88</option>
+                                        <option value="">+1-268</option>
+                                        <option value="">+93</option>
+                                        <option value="">+355</option>
+                                        <option value="">+213</option>
+                                        <option value="">+376</option>
+                                        <option value="">+673</option>
+                                        <option value="">+246</option>
+                                        <option value="">+55</option>
+                                        <option value="">+267</option>
+                                    </select>
                                 </div>
                                 <input className="mb-3 form-control form-control-lg student-profile-info" name="phone_number" type="text" placeholder="ফোন নাম্বার লিখুন" value={inputMobileNumber} onChange={handleInputChange} />
                             </div>
