@@ -86,22 +86,22 @@ const OrganicAudienceForm = () => {
     return (
         <section className='container'>
             <div className="align-center">
-                <img src={logo} alt="" className='img-fluid'/>
+                <img src={logo} alt="" className='img-fluid' />
             </div>
             <div className='container-iframe'>
-                <iframe 
+                <iframe
                     className='responsive-iframe'
-                    src="https://www.youtube.com/embed/pvdv_d-VjDs?si=V8pN1HQYJnLrgF__" 
+                    src="https://www.youtube.com/embed/pvdv_d-VjDs?si=V8pN1HQYJnLrgF__"
                     title="YouTube video player"
                     frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
                 </iframe>
             </div>
 
             <div className='mt-4 mb-2 d-flex justify-content-between align-items-center'>
                 <p className='lead-collect-title mb-0'>নিচের ফর্মটি পূরণ করুন</p>
-                <img src={logo} alt="" className='img-fluid'/>
+                <img src={logo} alt="" className='img-fluid' />
             </div>
 
             <div className='mb-5'>
@@ -117,9 +117,19 @@ const OrganicAudienceForm = () => {
                             <p className='mb-2 font-400'>সন্তানের নাম<span className='text-danger'>*</span></p>
                             <input className="mb-3 form-control form-control-lg student-profile-info" name="children_name" type="text" placeholder="সন্তানের নাম লিখুন " />
                         </div>
-                        <div className="col-lg-6">
+                        <div class="col-lg-6">
                             <p className='mb-2 font-400'>ফোন নাম্বার<span className='text-danger'>*</span></p>
-                            <input className="mb-3 form-control form-control-lg student-profile-info" name="phone_number" type="text" placeholder="ফোন নাম্বার লিখুন" value={inputMobileNumber} onChange={handleInputChange} />
+                            <div class="input-group country-code">
+                                <div class="input-group-text">
+                                <select name="" id="">
+                                    <option value="">Bangladesh</option>
+                                    <option value="">India</option>
+                                    <option value="">Nepal</option>
+                                    <option value="">England</option>
+                                </select>
+                                </div>
+                                <input className="mb-3 form-control form-control-lg student-profile-info" name="phone_number" type="text" placeholder="ফোন নাম্বার লিখুন" value={inputMobileNumber} onChange={handleInputChange} />
+                            </div>
                         </div>
                         <div className="col-lg-6">
                             <p className='mb-2 font-400'>আপনার সন্তান কোন ক্লাসে পড়ে<span className='text-danger'>*</span></p>
@@ -127,7 +137,7 @@ const OrganicAudienceForm = () => {
                         </div>
                         <div className="col-lg-6">
                             <p className='mb-2 font-400'>আপনার সন্তানের বয়স<span className='text-danger'>*</span></p>
-                            <input className="mb-3 form-control form-control-lg student-profile-info" name="children_age" type="number" placeholder="সন্তানের বয়স লিখুন"/>
+                            <input className="mb-3 form-control form-control-lg student-profile-info" name="children_age" type="number" placeholder="সন্তানের বয়স লিখুন" />
                         </div>
                         <div className="col-lg-6">
                             <p className='mb-2 font-400'>নিজ জেলা</p>
@@ -137,43 +147,43 @@ const OrganicAudienceForm = () => {
                             <div className="form-group mb-2">
                                 <label className='mb-2'>আপনার সোনামণিকে মজারুতে কোন কোর্সটি করাতে চান<span className='text-danger'>*</span></label>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="অ্যাবাকাস মাইন্ড ম্যাথ" value="অ্যাবাকাস মাইন্ড ম্যাথ" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="অ্যাবাকাস মাইন্ড ম্যাথ" value="অ্যাবাকাস মাইন্ড ম্যাথ" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="অ্যাবাকাস মাইন্ড ম্যাথ">
                                         অ্যাবাকাস মাইন্ড ম্যাথ
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="ক্যাডেট প্রি-প্রিপারেশন (৩য়, ৪র্থ ও ৫ম শ্রেণির শিক্ষার্থীদের জন্য)" value="ক্যাডেট প্রি-প্রিপারেশন (৩য়, ৪র্থ ও ৫ম শ্রেণির শিক্ষার্থীদের জন্য)" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="ক্যাডেট প্রি-প্রিপারেশন (৩য়, ৪র্থ ও ৫ম শ্রেণির শিক্ষার্থীদের জন্য)" value="ক্যাডেট প্রি-প্রিপারেশন (৩য়, ৪র্থ ও ৫ম শ্রেণির শিক্ষার্থীদের জন্য)" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="ক্যাডেট প্রি-প্রিপারেশন (৩য়, ৪র্থ ও ৫ম শ্রেণির শিক্ষার্থীদের জন্য)">
                                         ক্যাডেট প্রি-প্রিপারেশন (৩য়, ৪র্থ ও ৫ম শ্রেণির শিক্ষার্থীদের জন্য)
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="মিশন ক্যাডেট - ২৪ (৬ষ্ঠ শ্রেণির শিক্ষার্থীদের জন্য)" value="মিশন ক্যাডেট - ২৪ (৬ষ্ঠ শ্রেণির শিক্ষার্থীদের জন্য)" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="মিশন ক্যাডেট - ২৪ (৬ষ্ঠ শ্রেণির শিক্ষার্থীদের জন্য)" value="মিশন ক্যাডেট - ২৪ (৬ষ্ঠ শ্রেণির শিক্ষার্থীদের জন্য)" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="মিশন ক্যাডেট - ২৪ (৬ষ্ঠ শ্রেণির শিক্ষার্থীদের জন্য)">
                                         মিশন ক্যাডেট - ২৪ (৬ষ্ঠ শ্রেণির শিক্ষার্থীদের জন্য)
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="স্মার্ট ইংলিশ" value="স্মার্ট ইংলিশ" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="স্মার্ট ইংলিশ" value="স্মার্ট ইংলিশ" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="স্মার্ট ইংলিশ">
                                         স্মার্ট ইংলিশ
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="ম্যাথ চ্যাম্পস- প্রাইমারি" value="ম্যাথ চ্যাম্পস- প্রাইমারি" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="ম্যাথ চ্যাম্পস- প্রাইমারি" value="ম্যাথ চ্যাম্পস- প্রাইমারি" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="ম্যাথ চ্যাম্পস- প্রাইমারি">
                                         ম্যাথ চ্যাম্পস- প্রাইমারি
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="প্রোগ্রামিং ফর কিডস (৭ থেকে ১২ বছর বয়সী দেরা জন্য)" value="প্রোগ্রামিং ফর কিডস (৭ থেকে ১২ বছর বয়সী দেরা জন্য)" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="প্রোগ্রামিং ফর কিডস (৭ থেকে ১২ বছর বয়সী দেরা জন্য)" value="প্রোগ্রামিং ফর কিডস (৭ থেকে ১২ বছর বয়সী দেরা জন্য)" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="প্রোগ্রামিং ফর কিডস (৭ থেকে ১২ বছর বয়সী দেরা জন্য)">
                                         প্রোগ্রামিং ফর কিডস (৭ থেকে ১২ বছর বয়সী দেরা জন্য)
                                     </label>
                                 </div>
                                 <div className="form-check">
-                                    <input className="form-check-input" type="checkbox" id="আদর্শলিপি (৩ থেকে ৪ বছর বয়সী দেরা জন্য)" value="আদর্শলিপি (৩ থেকে ৪ বছর বয়সী দেরা জন্য)" onChange={handleCheckboxChange}/>
+                                    <input className="form-check-input" type="checkbox" id="আদর্শলিপি (৩ থেকে ৪ বছর বয়সী দেরা জন্য)" value="আদর্শলিপি (৩ থেকে ৪ বছর বয়সী দেরা জন্য)" onChange={handleCheckboxChange} />
                                     <label className="form-check-label" htmlFor="আদর্শলিপি (৩ থেকে ৪ বছর বয়সী দেরা জন্য)">
                                         আদর্শলিপি (৩ থেকে ৪ বছর বয়সী দেরা জন্য)
                                     </label>
@@ -199,7 +209,7 @@ const OrganicAudienceForm = () => {
 
 
                     <div className=" d-flex justify-content-end">
-                        <input className="btn text-white mt-4 py-2 mb-5" style={{ backgroundColor:'#532D80', fontSize:'22' }} type="submit" value='সংরক্ষণ করুন'></input>
+                        <input className="btn text-white mt-4 py-2 mb-5" style={{ backgroundColor: '#532D80', fontSize: '22' }} type="submit" value='সংরক্ষণ করুন'></input>
                     </div>
                 </form>
             </div>

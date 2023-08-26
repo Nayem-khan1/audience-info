@@ -40,3 +40,13 @@
     width: 100%;
     height: 100%;
   }
+ .input-group-text{
+    height: 48px !important;
+ }
+ .country-code {
+    height: 48px;
+ }
+  .country-code select {
+    border: none;
+
+  }
