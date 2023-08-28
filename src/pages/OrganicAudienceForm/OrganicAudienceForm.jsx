@@ -232,8 +232,8 @@ const OrganicAudienceForm = () => {
                 </div>
             </section>
             <div className="social-container">
-                <img className="facebook-logo" src={facebook} alt="facebook logo" />
-                <img className="whatsapp-logo" src={whatsapp} alt="whatsapp logo" />
+                <a href="https://www.facebook.com/groups/mojaru.genius" target="_blank" title="Facebook"><img className="facebook-logo" src={facebook} alt="facebook logo" /></a>
+                <a href="https://api.whatsapp.com/send/?phone=8801896264444&text&type=phone_number&app_absent=0" target="_blank" title="Whatsapp"><img className="whatsapp-logo" src={whatsapp} alt="whatsapp logo" /></a>
             </div>
         </>
     );

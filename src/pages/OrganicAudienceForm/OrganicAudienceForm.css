@@ -83,11 +83,13 @@
 
 @media (max-width: 480px) {
   .social-container {
-      gap: 10px;
+    bottom: 0;
+    right: 0;
+    gap: 10px;
   }
 
   .whatsapp-logo {
-    width: 48px;
+    width: 64px;
   }
   .facebook-logo {
       width: 64px;
