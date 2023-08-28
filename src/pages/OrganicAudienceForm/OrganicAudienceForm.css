@@ -67,7 +67,7 @@
 }
 
 .facebook-logo{
-  width: 64px;
+  width: 84px;
 
 }
 .whatsapp-logo {
@@ -77,7 +77,7 @@
 @media (max-width: 768px) {
   .whatsapp-logo,
   .facebook-logo {
-      width: 48px;
+      width: 64px;
   }
 }
 
@@ -86,8 +86,10 @@
       gap: 10px;
   }
 
-  .whatsapp-logo,
+  .whatsapp-logo {
+    width: 48px;
+  }
   .facebook-logo {
-      width: 48px;
+      width: 64px;
   }
 }

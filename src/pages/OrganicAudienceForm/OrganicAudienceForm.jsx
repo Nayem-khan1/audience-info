@@ -1,13 +1,12 @@
 import React from 'react';
 import watermarkLogo from '../../assets/m_watermark.png';
-import logo from '../../assets/dashboard-logo.png';
 import flat_log from '../../assets/logo_flat.png'
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import './OrganicAudienceForm.css';
 
-import facebook from '../../assets/social/facebook.png';
-import whatsapp from '../../assets/social/whatsapp.png';
+import facebook from '../../assets/social/facebook.gif';
+import whatsapp from '../../assets/social/whatsapp.gif';
 
 const OrganicAudienceForm = () => {
     const [inputMobileNumber, setInputMobileNumber] = useState('');
@@ -233,8 +232,8 @@ const OrganicAudienceForm = () => {
                 </div>
             </section>
             <div className="social-container">
-                <img className="whatsapp-logo" src={whatsapp} alt="whatsapp logo" />
                 <img className="facebook-logo" src={facebook} alt="facebook logo" />
+                <img className="whatsapp-logo" src={whatsapp} alt="whatsapp logo" />
             </div>
         </>
     );
