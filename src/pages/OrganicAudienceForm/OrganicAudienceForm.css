@@ -64,6 +64,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+    background-color: #fff;
 }
 
 .facebook-logo{
@@ -71,7 +72,7 @@
 
 }
 .whatsapp-logo {
-  width: 64px;
+  width: 84px;
 }
 
 @media (max-width: 768px) {

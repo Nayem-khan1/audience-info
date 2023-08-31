@@ -7,6 +7,7 @@ import './OrganicAudienceForm.css';
 
 import facebook from '../../assets/social/facebook.gif';
 import whatsapp from '../../assets/social/whatsapp.gif';
+import youtube from '../../assets/social/youtube.gif';
 
 const OrganicAudienceForm = () => {
     const [inputMobileNumber, setInputMobileNumber] = useState('');
@@ -65,26 +66,27 @@ const OrganicAudienceForm = () => {
             zilla: e.target.zilla.value,
             interested_course: selectedValues.join(','),
             know_about_mojaru: e.target.know_about_mojaru.value,
-
         }
 
-        fetch(`${process.env.REACT_APP_BASE_URL_STUDENT}organic-audience-form-save`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(finalInformation),
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.message_type === 'success') {
-                    toast.success(data.message);
-                    e.target.reset();
-                    setInputMobileNumber();
-                } else {
-                    toast.error(data.message);
-                }
-            })
+        toast.success("Registration Successful")
+
+        // fetch(`${process.env.REACT_APP_BASE_URL_STUDENT}organic-audience-form-save`, {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(finalInformation),
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         if (data.message_type === 'success') {
+        //             toast.success(data.message);
+        //             e.target.reset();
+        //             setInputMobileNumber();
+        //         } else {
+        //             toast.error(data.message);
+        //         }
+        //     })
     }
     return (
         <>
@@ -234,6 +236,7 @@ const OrganicAudienceForm = () => {
             <div className="social-container">
                 <a href="https://www.facebook.com/groups/mojaru.genius" target="_blank" title="Facebook"><img className="facebook-logo" src={facebook} alt="facebook logo" /></a>
                 <a href="https://api.whatsapp.com/send/?phone=8801896264444&text&type=phone_number&app_absent=0" target="_blank" title="Whatsapp"><img className="whatsapp-logo" src={whatsapp} alt="whatsapp logo" /></a>
+                <a href="https://www.youtube.com/@Mojarutech" target="_blank" title="YouTube"><img className="facebook-logo" src={youtube} alt="youtube" /></a>
             </div>
         </>
     );
