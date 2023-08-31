@@ -94,7 +94,7 @@ const OrganicAudienceForm = () => {
                 <div className='container'>
                     <div className="row d-flex justify-content-evenly align-items-center py-4">
                         <div className="col-md-6 text-center">
-                            <img src={flat_log} alt="" className='img-fluid img' />
+                            <a href="https://mojaru.com/" target="_blank"><img src={flat_log} alt="" className='img-fluid img' /></a>
                         </div>
                         <div className="col-md-6 text-center pt-2">
                             <h2 className="text-color">রেজিস্ট্রেশন করুন</h2>
