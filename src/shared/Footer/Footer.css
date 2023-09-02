@@ -1,0 +1,13 @@
+.footerPage:hover{
+    color:#bebebe;
+}
+
+@media only screen and (max-width: 576px) {
+    .footer-text{
+        text-align: justify;
+    }
+    .footer-img{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -8,6 +8,10 @@ import './OrganicAudienceForm.css';
 import facebook from '../../assets/social/facebook.gif';
 import whatsapp from '../../assets/social/whatsapp.gif';
 import youtube from '../../assets/social/youtube.gif';
+import AccordionComponent from '../components/AccordionComponent';
+import Footer from '../../shared/Footer/Footer';
+import Banner from '../components/banner';
+import { Formik } from 'formik';
 
 const OrganicAudienceForm = () => {
     const [inputMobileNumber, setInputMobileNumber] = useState('');
@@ -68,6 +72,8 @@ const OrganicAudienceForm = () => {
             know_about_mojaru: e.target.know_about_mojaru.value,
         }
 
+        console.log(finalInformation);
+
         toast.success("Registration Successful")
 
         // fetch(`${process.env.REACT_APP_BASE_URL_STUDENT}organic-audience-form-save`, {
@@ -101,14 +107,14 @@ const OrganicAudienceForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className='container-iframe'>
+                <div className='ratio ratio-21x9 '>
                     <iframe
-                        className='responsive-iframe'
+                        className='rounded-3'
                         src="https://www.youtube.com/embed/pvdv_d-VjDs?si=V8pN1HQYJnLrgF__"
                         title="YouTube video player"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
+                        allowFullScreen>
                     </iframe>
                 </div>
                 {/* d-flex justify-content-between align-items-center */}
@@ -116,6 +122,8 @@ const OrganicAudienceForm = () => {
                     <p className='lead-collect-title mb-0 text-center py-3'>নিচের ফর্মটি পূরণ করুন</p>
                     {/* <img src={logo} alt="" className='img-fluid' /> */}
                 </div>
+
+                
 
                 <div className='mb-5'>
                     <img src={watermarkLogo} alt="Watermark Logo" className="watermark-logo" />
@@ -130,10 +138,10 @@ const OrganicAudienceForm = () => {
                                 <p className='mb-2 font-400'>সন্তানের নাম<span className='text-danger'>*</span></p>
                                 <input className="mb-3 form-control form-control-lg student-profile-info" name="children_name" type="text" placeholder="সন্তানের নাম লিখুন " />
                             </div>
-                            <div class="col-lg-6">
+                            <div className="col-lg-6">
                                 <p className='mb-2 font-400'>ফোন নাম্বার<span className='text-danger'>*</span></p>
-                                <div class="input-group country-code">
-                                    <div class="input-group-text">
+                                <div className="input-group country-code">
+                                    <div className="input-group-text">
                                         <select name="" id="">
                                             <option value="">+88</option>
                                             <option value="">+1-268</option>
@@ -233,11 +241,14 @@ const OrganicAudienceForm = () => {
                     </form>
                 </div>
             </section>
+            <AccordionComponent></AccordionComponent>
+            <Banner></Banner>
             <div className="social-container">
                 <a href="https://www.facebook.com/groups/mojaru.genius" target="_blank" title="Facebook"><img className="facebook-logo" src={facebook} alt="facebook logo" /></a>
                 <a href="https://api.whatsapp.com/send/?phone=8801896264444&text&type=phone_number&app_absent=0" target="_blank" title="Whatsapp"><img className="whatsapp-logo" src={whatsapp} alt="whatsapp logo" /></a>
                 <a href="https://www.youtube.com/@Mojarutech" target="_blank" title="YouTube"><img className="facebook-logo" src={youtube} alt="youtube" /></a>
             </div>
+            <Footer></Footer>
         </>
     );
 };
